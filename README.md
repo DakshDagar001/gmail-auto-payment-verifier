@@ -101,5 +101,14 @@ Check the `docs/` folder for specific guides:
 ## 🤝 Contribution
 Pull requests are welcome! Feel free to add more parsers for different global payment providers.
 
-## 📄 License
-MIT License. See [LICENSE](LICENSE) for details.
+---
+
+## 👨‍💻 Credits & Support
+
+**Developed by Fynixx Tech**
+
+If you encounter any bugs or errors, feel free to reach out:
+- **Email:** dxdeveloperrr@gmail.com
+- **Telegram:** [https://t.me/only_fynixx](https://t.me/only_fynixx)
+
+**⚠️ Do Not Steal Credit!**
