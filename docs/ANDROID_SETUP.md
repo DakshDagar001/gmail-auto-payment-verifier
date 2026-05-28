@@ -8,15 +8,15 @@ Since your Android app needs to know if a payment was successful, it can poll th
 
 ### 1. Update AndroidManifest.xml
 Ensure you have internet permissions:
-\`\`\`xml
+```xml
 <uses-permission android:name="android.permission.INTERNET" />
-\`\`\`
+```
 
 ### 2. Network Call Implementation
 We provided an example in `src/examples/android/PaymentIntegration.kt`.
 
 ### 3. Usage in ViewModel / Activity
-\`\`\`kotlin
+```kotlin
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 
@@ -43,7 +43,7 @@ class CheckoutActivity : AppCompatActivity() {
         }
     }
 }
-\`\`\`
+```
 
 ### Security Warning
 Do not hardcode `apiKey` in your Android APK if possible. It is better to have an intermediate secure backend, or obfuscate it.

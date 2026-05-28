@@ -17,11 +17,11 @@ For production, you should use Firebase Firestore.
 ## 3. Configure Environment
 Open your `.env` file and map the fields from the JSON file:
 
-\`\`\`env
+```env
 FIREBASE_PROJECT_ID="your-project-id"
 FIREBASE_CLIENT_EMAIL="firebase-adminsdk-xxx@your-project.iam.gserviceaccount.com"
 FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_KEY_HERE\n-----END PRIVATE KEY-----\n"
-\`\`\`
+```
 
 *Note: Ensure `\n` is explicitly written in the `.env` string for the private key to parse correctly.*
 

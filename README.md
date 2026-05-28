@@ -41,17 +41,17 @@ A FREE, fully automated backend that reads incoming payment notification emails 
 - (Optional) Firebase project
 
 ### 2. Installation
-\`\`\`bash
+```bash
 git clone <your-repo-url>
 cd gmail-auto-payment-verifier
 npm install
-\`\`\`
+```
 
 ### 3. Environment Configuration
 Copy the sample env file:
-\`\`\`bash
+```bash
 cp .env.example .env
-\`\`\`
+```
 Edit `.env` and fill in your details (API Keys, Client ID, etc.).
 
 ### 4. Gmail API Setup
@@ -63,9 +63,9 @@ Edit `.env` and fill in your details (API Keys, Client ID, etc.).
 6. *To get a Refresh Token:* You will need to implement a quick OAuth flow script or use Google OAuth Playground to authorize your own email and retrieve a `refresh_token`.
 
 ### 5. Running the Server
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 Check the health status: `http://localhost:3000/api/health`
 
 ---
@@ -73,17 +73,23 @@ Check the health status: `http://localhost:3000/api/health`
 ## 📖 API Documentation
 
 ### 1. Health Check
-\`GET /api/health\`
+```http
+GET /api/health
+```
 Returns system status.
 
 ### 2. Manual Refresh
-\`POST /api/verify/manual-refresh\`
-Headers: `x-api-key: your_api_key`
+```http
+POST /api/verify/manual-refresh
+X-API-KEY: your_api_key
+```
 Force the server to check Gmail immediately.
 
 ### 3. Get Verified Payments
-\`GET /api/verify/payments\`
-Headers: `x-api-key: your_api_key`
+```http
+GET /api/verify/payments
+X-API-KEY: your_api_key
+```
 Returns the list of recently verified payments.
 
 ---
