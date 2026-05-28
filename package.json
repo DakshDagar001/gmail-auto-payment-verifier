@@ -1,0 +1,37 @@
+{
+  "name": "gmail-auto-payment-verifier",
+  "version": "1.0.0",
+  "description": "FREE Gmail-based automatic payment verification backend for apps and games.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gmail",
+    "payment",
+    "verification",
+    "api",
+    "oauth2",
+    "express"
+  ],
+  "author": "Open Source Community",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.4",
+    "firebase-admin": "^11.11.0",
+    "googleapis": "^128.0.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "eslint": "^8.52.0"
+  }
+}
