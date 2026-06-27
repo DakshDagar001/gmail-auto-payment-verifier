@@ -42,7 +42,7 @@ A FREE, fully automated backend that reads incoming payment notification emails 
 
 ### 2. Installation
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/DakshDagar001/gmail-auto-payment-verifier.git
 cd gmail-auto-payment-verifier
 npm install
 ```
